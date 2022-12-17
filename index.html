@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--Langage fr html-->
+
+<head>
+  <!--entête-->
+  <link href="./css/index.css" rel="stylesheet" type="text/css">
+  <!-- relie la page html à la page index.css pour css-->
+  <link rel="icon" href="favicon.ico">
+  <!--Insere une image sur l'onglet de site-->
+  <title>Le Volley-Ball</title>
+  <!--Titre de l'onglet-->
+  <meta charset="utf-8">
+  <!--encodage des caractères-->
+  <meta name="description" content="Sur ce site nous allons vous présenter le volley">
+</head>
+<!--fin entête-->
+
+<body>
+  <!--corps-->
+  <nav id="nav-1">
+    <!--section d'une page ayant des liens vers d'autres pages-->
+    <a class="link-1" href="../index.html">Accueil</a>
+    <!--début texte et lien de l'élément de la liste-->
+    <a class="link-1" href="../pages/regles.html">Les Règles</a>
+    <!--début texte et lien de l'élément de la liste-->
+    <a class="link-1" href="../pages/postes.html">Les Postes</a>
+    <!--début texte et lien de l'élément de la liste-->
+    <button onclick="myFunction()">Switch mode</button>
+    <!--Bouton "switch mode"-->
+  </nav>
+  <!--fin de section-->
+  <h1>Le Volley-Ball</h1><br>
+  <!--Titre-->
+  <!--br= saut de ligne-->
+  <img class="centre" src="../images/ballon.jpg" alt="image d'un ballon de volley"><br>
+  <!--Image-->
+  <h2 class="avis">Donnez votre avis </h2><br>
+  <!--sous-titre de niveau 2-->
+  <form id="form" action="mailto:williamchopard9@gmail.com?content-type=text/html&amp;subject=Site%20Web" method="post"
+    enctype="text/plain">
+    <!--Les avis sont envoyé sur une adresse mail-->
+    <p class="centre">
+      <!--Met au centre-->
+      <label class="avi" for="nom">Nom :</label>
+      <!--Met un bloc pour le formulaire-->
+      <input id="nom" type="text" name="nom" value="">
+      <!--Met une case a remplir(texte)-->
+
+      <label class="avi" for="prenom">Prenom :</label>
+      <!--Met un bloc pour le formulaire-->
+      <input id="prenom" type="text" name="prenom" value=""><br>
+      <!--Met une case a remplir(texte)-->
+
+      <label class="avi" for="age">Age :</label>
+      <!--Met un bloc pour le formulaire-->
+      <input id="age" type="text" name="age" value="">
+      <!--Met une case a remplir(texte)-->
+
+      <label class="avi" for="mail">Mail :</label>
+      <!--Met un bloc pour le formulaire-->
+      <input id="mail" type="text" name="mail" value=""><br>
+      <!--Met une case a remplir(texte)-->
+
+      <input id="homme" type="radio" name="sexe" value="homme">
+      <!--Met une case a cocher-->
+      <label class="avi" for="homme">Homme</label>
+      <!--Met un bloc pour le formulaire-->
+
+      <input id="femme" type="radio" name="sexe" value="femme">
+      <!--Met une case a cocher-->
+      <label class="avi" for="femme">Femme</label><br><br>
+      <!--Met un bloc pour le formulaire-->
+
+      <textarea name="impression" rows="1" cols="50">Donnez votre impression sur mon site...</textarea>
+
+      <button type="submit">Envoyer</button>
+      <!--Met un bloc pour le formulaire-->
+      <button type="reset">Rénitialisation</button>
+      <!--Met un bloc pour le formulaire-->
+
+    </p>
+  </form>
+  <!--Fin du formulaire-->
+  <div id="scroll_to_top">
+    <!--Met un petit bloc en bas a droite du site pour remonter en haut de la page-->
+    <a href="#top"><img src="../images/top.png" alt="Retourner en haut"></a>
+    <!--Met une image pour le petit bloc en bas a droite-->
+  </div>
+  <h2 class="avis">Pour plus d'information</h2>
+  <!--sous titre de niveau 3-->
+  <a href="http://www.ffvb.org/"><img src="./images/top.png" alt="Féderation francaise de volley" class="center"></a>
+  <!--Lien qui renvoie vers une page web-->
+  <script src="../theme.js"></script>
+  <!-- appel de la fonction pour le boutton switch mode-->
+</body>
+<!--Fin du corps-->
+
+</html>

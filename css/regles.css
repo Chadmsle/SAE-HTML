@@ -1,0 +1,181 @@
+/*import different police de texte*/
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    /*modification corp du code*/
+    font-family: 'Crimson Text', 'Nerko One';
+    /*changement de la police*/
+}
+
+nav {
+    /*modification du menu*/
+    margin-top: 30px;
+    /*marge vertical*/
+    padding: 24px;
+    /*augmentation taille menu*/
+    text-align: center;
+    /*commande pour centrer le texte*/
+    font-family: Raleway;
+    /*changement de la police*/
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    /*ombres menu*/
+}
+
+#nav-1 {
+    /*modification menu*/
+    background: #929292;
+    /*changement font du menu*/
+}
+
+.link-1 {
+    /*modification animation menu*/
+    transition: 0.3s ease;
+    /*temp de transition dans le menu*/
+    background: #929292;
+    /*couleur de font du menu*/
+    color: #ffffff;
+    /*couleur texte dans le menu*/
+    font-size: 20px;
+    /*taille de la police dans le menu*/
+    text-decoration: none;
+    /*commande pour enlever les decorations des liens hypertextes*/
+    border-top: 4px solid #929292;
+    /*affichage de la bordure du haut et modification de sa couleur*/
+    border-bottom: 4px solid #929292;
+    /*affichage de la bordure du bas et modification de sa couleur*/
+    padding: 20px 0;
+    /*augmentation taille menu*/
+    margin: 0 20px;
+    /*definition de la marge sur les cotés droit et gauche*/
+}
+
+.link-1:hover {
+    /*modification animations du menu*/
+    border-top: 4px solid #ffffff;
+    /*affichage bordure haute du texte et modification de sa couleur*/
+    border-bottom: 4px solid #ffffff;
+    /*affichage bordure basse du texte et modification de sa couleur*/
+    padding: 6px 0;
+    /*augmentation taille arriere plant du texte*/
+}
+
+button {
+    /*modification button*/
+    cursor: pointer;
+    /*affichage pointer quand on passe la souris sur le button*/
+    border: 1px solid #555;
+    /*affichage bordure du button et modification de leurs couleurs*/
+    text-align: center;
+    /*commande pour centrer le texte dans le button*/
+    padding: 5px;
+    /*augmentation taille button*/
+    margin-top: 8px;
+    /*definition marge du haut du button*/
+}
+
+div.container {
+    /*modification emplacement du contenue*/
+    display: flex;
+    /*commande pour centrer l'image par rapport au bordure*/
+    flex-direction: row;
+    /*rangement des cases dans l'ordre croissant*/
+}
+
+div.container>p,
+div.container>img {
+    /*modification emplacement du contenue*/
+    width: 45%;
+    /*modification taille du contenue*/
+}
+
+div.flex-inverse {
+    /*modification emplacement contenue*/
+    flex-direction: row-reverse;
+    /*rangement des cases l'ordre décroissant*/
+}
+
+p {
+    /*modification paragraphe*/
+    font-size: 2rem;
+    /*modification taille du texte*/
+}
+
+h1 {
+    /*modification titre de niveau */
+    color: #1339ff;
+    /*changement de la couleur*/
+    font-size: 3rem;
+    /*changement taille du texte */
+    text-shadow: 4px 2px 0px #74a7fe75;
+    /*affichage des ombres et definition de la couleur*/
+    text-align: center;
+    /*commande pour centrer le texte*/
+}
+
+.dark {
+    /*modification pour mode sombre*/
+    background-color: #222;
+    /*changement de la couleur de l'arièrre plan*/
+    color: #e6e6e6;
+    /*changemebnt couleur du texte*/
+}
+
+img.nishida {
+    /*modification des images*/
+    width: 50%;
+    /*adaptation de la largeur de l'image en fonction de la largeur max de l'écran*/
+    height: calc((width *0.5625%)/2);
+    /*adptation de la hauteur de l'image en fonction de la largeur*/
+    text-align: left;
+    /*commande pour placer l'image a gauche de l'écran*/
+    margin: auto;
+    /*marge automatique*/
+    display: flex;
+    /*commande pour centrer l'image par rapport au bordure*/
+}
+
+img.position {
+    /*modification des images*/
+    width: 50%;
+    /*adaptation de la largeur de l'image en fonction de la largeur max de l'écran*/
+    height: calc((width *0.61%)/2);
+    /*adptation de la hauteur de l'image en fonction de la largeur*/
+    text-align: left;
+    /*commande pour placer l'image a gauche de l'écran*/
+    margin: auto;
+    /*marge automatique*/
+    display: flex;
+    /*commande pour centrer l'image par rapport au bordure*/
+}
+
+#scroll_to_top {
+    /*modification button pour remonter en haut de la page*/
+    position: fixed;
+    /*button reste afficher même quand on scroll*/
+    width: 75px;
+    /*modification largeur du button*/
+    height: 75px;
+    /*modification hauteur du button*/
+    bottom: 25px;
+    /*placement vertical du button*/
+    right: 15px;
+    /*placement horizontal du button*/
+}
+
+#scroll_to_top img {
+    /*modification button top*/
+    width: 75px;
+    /*definitions emplacement du centre du button sur la page*/
+}
+
+@media screen and (max-width: 1020px) {
+
+    /*adaptation plus petit écran*/
+    .petit {
+        /*adaptation des paragraphes*/
+        font-size: 25px;
+        /*changement de la taille du texte*/
+    }
+}
